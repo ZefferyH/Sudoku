@@ -75,7 +75,6 @@ def main():
                     square_selected = ()
                 else:
                     square_selected = (row, col)
-                print(square_selected)
             elif e.type == p.KEYDOWN:
                 if square_selected != ():
                     if e.key == p.K_1:
@@ -108,7 +107,7 @@ def main():
                         State.message = "No solution from current position"
                 elif e.key == p.K_t: #test
                     pass
-                    print("test")
+
         ## Button Hover Effects
         # First Row
         if BOARD_HEIGHT <= mouse_y <= BOARD_HEIGHT + SQUARE_SIZE:
